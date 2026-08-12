@@ -239,7 +239,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3wlsy")
 }],
-"loop": true,
+"loop": 1,
 "name": &"attack-down",
 "speed": 5.0
 }, {
@@ -253,7 +253,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mtric")
 }],
-"loop": true,
+"loop": 1,
 "name": &"attack-left",
 "speed": 5.0
 }, {
@@ -267,7 +267,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ghoj8")
 }],
-"loop": true,
+"loop": 1,
 "name": &"attack-right",
 "speed": 5.0
 }, {
@@ -281,7 +281,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wuv6x")
 }],
-"loop": true,
+"loop": 1,
 "name": &"attack-up",
 "speed": 5.0
 }, {
@@ -289,7 +289,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qpopc")
 }],
-"loop": true,
+"loop": 1,
 "name": &"hurt-down",
 "speed": 5.0
 }, {
@@ -297,7 +297,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wq0jh")
 }],
-"loop": true,
+"loop": 1,
 "name": &"hurt-left",
 "speed": 5.0
 }, {
@@ -305,7 +305,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gt4e4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"hurt-right",
 "speed": 5.0
 }, {
@@ -313,7 +313,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_24ehl")
 }],
-"loop": true,
+"loop": 1,
 "name": &"hurt-up",
 "speed": 5.0
 }, {
@@ -324,7 +324,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8e6up")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle-down",
 "speed": 5.0
 }, {
@@ -335,7 +335,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_64wqr")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle-left",
 "speed": 5.0
 }, {
@@ -346,7 +346,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5uqfi")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle-right",
 "speed": 5.0
 }, {
@@ -357,7 +357,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_h6hm5")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle-up",
 "speed": 5.0
 }, {
@@ -371,7 +371,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_og5nk")
 }],
-"loop": true,
+"loop": 1,
 "name": &"run-down",
 "speed": 5.0
 }, {
@@ -385,7 +385,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1mbv1")
 }],
-"loop": true,
+"loop": 1,
 "name": &"run-left",
 "speed": 5.0
 }, {
@@ -399,7 +399,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_p4mmg")
 }],
-"loop": true,
+"loop": 1,
 "name": &"run-right",
 "speed": 5.0
 }, {
@@ -413,7 +413,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lt6c7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"run-up",
 "speed": 5.0
 }, {
@@ -427,7 +427,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tgfo6")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk-down",
 "speed": 5.0
 }, {
@@ -441,7 +441,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_x6yum")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk-left",
 "speed": 5.0
 }, {
@@ -455,7 +455,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fel0r")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk-right",
 "speed": 5.0
 }, {
@@ -469,7 +469,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_amlm5")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk-up",
 "speed": 5.0
 }]
@@ -486,7 +486,7 @@ action = "jump"
 function_name = "jump"
 metadata/_custom_type_script = "uid://dlqmc36quropm"
 
-[node name="Player" unique_id=445539203 node_paths=PackedStringArray("on_transfer_start", "on_transfer_end", "health_controller", "inventory", "running_particles", "on_attack", "on_fall") groups=["player", "save"] instance=ExtResource("1_fnaeb")]
+[node name="Player" unique_id=445539203 node_paths=PackedStringArray("on_transfer_start", "on_transfer_end", "health_controller", "inventory", "running_particles", "on_attack", "on_hit", "on_fall") groups=["player", "save"] instance=ExtResource("1_fnaeb")]
 y_sort_enabled = false
 script = ExtResource("2_x37y0")
 on_transfer_start = NodePath("StateMachine/auto")
@@ -495,8 +495,10 @@ health_controller = NodePath("HealthController")
 inventory = NodePath("Inventory")
 weapon = ExtResource("3_3wlsy")
 initial_facing = SubResource("Resource_3wlsy")
+friction = 3000.0
 running_particles = NodePath("SmokeParticles")
 on_attack = NodePath("StateMachine/attack")
+on_hit = NodePath("StateMachine/hurt")
 on_fall = NodePath("StateMachine/fall")
 
 [node name="SmokeParticles" parent="." index="2" unique_id=1354660529 instance=ExtResource("6_dxaj8")]

@@ -18,9 +18,8 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Godot 2D Top-Down Template"
+config/name="GooseJam"
 config/version="1.9.1"
-config/tags=PackedStringArray("template")
 run/main_scene="res://scenes/menus/start_screen.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="uid://cvnvko43mnhfy"
@@ -32,6 +31,7 @@ SceneManager="*res://scripts/autoloads/SceneManager.gd"
 DataManager="*res://scripts/autoloads/DataManager.gd"
 Debugger="*res://scripts/autoloads/debugger.gd"
 DialogueManager="*uid://c3rodes2l3gxb"
+BetterTerrain="*uid://beaxt74e1fixv"
 
 [dialogue_manager]
 
@@ -47,7 +47,7 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/better-terrain/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")
 
 [filesystem]
 
